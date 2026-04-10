@@ -2,539 +2,569 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>AllDent Zahnzentrum Essen — Zahnarztpraxis Essen</title>
-<meta name="description" content="AllDent Zahnzentrum Essen in Essen — Modernste Zahnmedizin mit persönlicher Betreuung in Essen. Wir nehmen uns Zeit für Sie.">
-<meta property="og:title" content="AllDent Zahnzentrum Essen | Essen">
-<meta property="og:image" content="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=1000&fit=crop&q=80">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%231A1A2E'/><text x='16' y='22' text-anchor='middle' fill='%232D7FF9' font-size='16' font-weight='bold'>+</text></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AllDent Zahnzentrum Essen | Ihr Zahnarzt am Willy-Brandt-Platz</title>
+<meta name="description" content="AllDent Zahnzentrum Essen - Moderne Zahnmedizin am Willy-Brandt-Platz. Prophylaxe, Implantate, Ästhetik & Kieferorthopädie. Mo-Fr 07-21, Sa 08-16 Uhr.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-/*
-  SYSTEMS v4 — ZAHNARZT
-  Built from igloo.inc Design Spec
-  12 Rules: 2-Color, Massive Whitespace, Fluid Type,
-  Negative Tracking, Size Hierarchy, One Font, Subtle Motion,
-  Scroll Animations, Dimmed Images, 12px Radius, Glass Nav
-*/
-
-/* === TOKENS === */
-:root {
-  --primary: #1A1A2E;
-  --accent: #2D7FF9;
-  --accent-hover: #1A6AE0;
-  --white: #FFFFFF;
-  --bg: #F7F8FA;
-  --bg-warm: #F5F0EB;
-  --border: #E8EAED;
-  --text: #374151;
-  --text-muted: #6B7280;
-  --text-faint: #9CA3AF;
-  --font: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-  --radius: 12px;
-  --radius-btn: 8px;
-  --radius-pill: 100px;
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.10);
-  --shadow-md: 0 2px 4px rgba(0,0,0,0.06), 0 4px 6px rgba(0,0,0,0.10);
-  --shadow-lg: 0 4px 6px rgba(0,0,0,0.05), 0 10px 15px -3px rgba(0,0,0,0.10);
-  --shadow-xl: 0 8px 10px rgba(0,0,0,0.04), 0 20px 25px -5px rgba(0,0,0,0.10);
-  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-/* Hero ALWAYS visible - no animation */
-.hero, .hero * { opacity: 1 !important; transform: none !important; }
-.hero .t-hero, .hero .t-label, .hero .t-body-lg, .hero .hero-actions, .hero .hero-stats, .hero .hero-img {
-  opacity: 1 !important; transform: none !important; transition: none !important;
-}
-
-/* === RESET === */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--white);color:var(--primary);font-family:var(--font);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
-a{text-decoration:none;color:inherit}
-img{display:block;max-width:100%;height:auto}
-button{border:none;background:none;cursor:pointer;font:inherit}
+:root{--blue:#2D7FF9;--blue-light:#EBF2FF;--blue-dark:#1a5fd4;--dark:#0f1729;--gray-900:#1a2332;--gray-700:#3d4f65;--gray-500:#6b7d93;--gray-300:#c4cfdb;--gray-100:#f0f3f7;--white:#ffffff;--font-display:'Sora',sans-serif;--font-body:'Inter',sans-serif;--radius:12px;--radius-lg:20px;--shadow-sm:0 1px 3px rgba(15,23,41,.06);--shadow-md:0 4px 20px rgba(15,23,41,.08);--shadow-lg:0 12px 40px rgba(15,23,41,.12)}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);color:var(--gray-700);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-display);color:var(--dark);line-height:1.2;font-weight:600}
+a{text-decoration:none;color:inherit;transition:color .2s}
+img{max-width:100%;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
 
-/* === LAYOUT === */
-.container{max-width:1400px;margin:0 auto;padding-inline:clamp(20px,4vw,52px)}
-section{padding-block:clamp(80px,10vw,200px)}
-
-/* === TYPOGRAPHY — Rule 3,4,5: Fluid, Negative Tracking, Size Hierarchy === */
-.t-hero{font-size:clamp(36px,2rem+4vw,80px);font-weight:800;line-height:1.05;letter-spacing:-0.03em}
-.t-section{font-size:clamp(32px,14px+4vw,72px);font-weight:700;line-height:1.1;letter-spacing:-0.02em}
-.t-sub{font-size:clamp(22px,16px+1.5vw,40px);font-weight:600;line-height:1.2;letter-spacing:-0.01em}
-.t-body-lg{font-size:clamp(17px,15px+0.5vw,20px);font-weight:400;line-height:1.7;color:var(--text)}
-.t-body{font-size:16px;font-weight:400;line-height:1.65;color:var(--text-muted)}
-.t-label{font-size:13px;font-weight:600;line-height:1.4;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-faint)}
-.t-accent{color:var(--accent)}
-
-/* === NAV — Rule 11: Glass Nav === */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 0;background:transparent;transition:all .3s ease}
-.nav.scrolled{background:rgba(255,255,255,0.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.05);box-shadow:var(--shadow-sm)}
-.nav-inner{display:flex;justify-content:space-between;align-items:center}
-.nav-brand{font-size:16px;font-weight:700;letter-spacing:-0.01em}
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.05);transition:all .3s}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1200px;margin:0 auto;padding:0 24px}
+.nav-logo{font-family:var(--font-display);font-size:1.35rem;font-weight:700;color:var(--dark)}
+.nav-logo span{color:var(--blue)}
 .nav-links{display:flex;gap:32px;align-items:center}
-.nav-links a{font-size:14px;font-weight:500;color:var(--primary);opacity:0.6;transition:opacity .3s}
-.nav-links a:hover{opacity:1}
-.nav-cta{padding:10px 24px;background:var(--accent);color:var(--white);font-size:13px;font-weight:600;border-radius:var(--radius-btn);transition:all .3s;opacity:1!important}
-.nav-cta:hover{background:#2A2B40;transform:translateY(-1px)}
+.nav-links a{font-size:.875rem;font-weight:500;color:var(--gray-700);transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{background:var(--blue);color:var(--white)!important;padding:10px 24px;border-radius:50px;font-weight:600;font-size:.875rem;transition:all .2s}
+.nav-cta:hover{background:var(--blue-dark);transform:translateY(-1px)}
+.nav-mobile{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.nav-mobile span{display:block;width:24px;height:2px;background:var(--dark);margin:5px 0;transition:all .3s}
 
-.nav-toggle{display:none;width:44px;height:44px;border-radius:var(--radius-btn);border:1px solid var(--border);align-items:center;justify-content:center;flex-direction:column;gap:5px;background:var(--white)}
-.nav-toggle span{width:16px;height:1.5px;background:var(--primary);border-radius:1px}
-@media(max-width:768px){.nav-links{display:none}.nav-toggle{display:flex}}
+/* HERO */
+.hero{padding:160px 0 100px;background:linear-gradient(135deg,var(--white) 0%,var(--blue-light) 100%);position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(45,127,249,.08) 0%,transparent 70%)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--gray-300);padding:8px 16px;border-radius:50px;font-size:.8rem;font-weight:500;color:var(--gray-700);margin-bottom:24px}
+.hero-badge::before{content:'';width:8px;height:8px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-size:3.2rem;font-weight:700;margin-bottom:20px;letter-spacing:-.02em}
+.hero h1 span{color:var(--blue)}
+.hero p{font-size:1.125rem;color:var(--gray-500);margin-bottom:36px;max-width:500px;line-height:1.7}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+.btn-primary{background:var(--blue);color:var(--white);padding:14px 32px;border-radius:50px;font-family:var(--font-display);font-weight:600;font-size:.95rem;border:none;cursor:pointer;transition:all .25s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--blue-dark);transform:translateY(-2px);box-shadow:0 8px 25px rgba(45,127,249,.3)}
+.btn-secondary{background:var(--white);color:var(--dark);padding:14px 32px;border-radius:50px;font-family:var(--font-display);font-weight:600;font-size:.95rem;border:2px solid var(--gray-300);cursor:pointer;transition:all .25s;display:inline-flex;align-items:center;gap:8px}
+.btn-secondary:hover{border-color:var(--blue);color:var(--blue)}
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center}
+.hero-img-wrapper{width:100%;aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;background:var(--blue-light);position:relative;box-shadow:var(--shadow-lg)}
+.hero-img-wrapper img{width:100%;height:100%;object-fit:cover}
+.hero-stat{position:absolute;background:var(--white);border-radius:var(--radius);padding:16px 20px;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:12px}
+.hero-stat.s1{bottom:-20px;left:-20px}
+.hero-stat.s2{top:20px;right:-20px}
+.hero-stat .num{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--blue)}
+.hero-stat .label{font-size:.75rem;color:var(--gray-500);line-height:1.3}
 
-.mobile-menu{position:fixed;inset:0;background:var(--white);z-index:200;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:28px;opacity:0;visibility:hidden;transition:all .4s}
-.mobile-menu.open{opacity:1;visibility:visible}
-.mobile-menu a{font-size:clamp(24px,5vw,36px);font-weight:600;letter-spacing:-0.02em}
-.mob-close{position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:var(--radius-btn);border:1px solid var(--border);display:flex;align-items:center;justify-content:center}
-.mob-close svg{width:16px;height:16px;stroke:var(--primary);stroke-width:2;fill:none}
+/* TRUST BAR */
+.trust{padding:48px 0;background:var(--white);border-bottom:1px solid var(--gray-100)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
+.trust-item .trust-num{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--blue)}
+.trust-item .trust-label{font-size:.85rem;color:var(--gray-500);margin-top:4px}
 
-/* === BUTTONS — Rule 6: Consistent === */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 28px;font-size:14px;font-weight:600;border-radius:var(--radius-btn);transition:all .3s var(--ease)}
-.btn svg{width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none}
-.btn-primary{background:var(--accent);color:var(--white);transition:all .3s var(--ease-out)}
-.btn-primary:hover{background:var(--accent-hover);transform:translateY(-2px);box-shadow:0 4px 14px rgba(45,127,249,0.25),0 1px 3px rgba(45,127,249,0.15)}
-.btn-dark{background:var(--primary);color:var(--white)}
-.btn-dark:hover{background:#2A2B40;transform:translateY(-2px);box-shadow:var(--shadow-lg)}
-.btn-outline{background:transparent;color:var(--primary);border:1px solid var(--border)}
-.btn-outline:hover{border-color:var(--primary);background:var(--bg)}
+/* SECTIONS COMMON */
+.section{padding:100px 0}
+.section-gray{background:var(--gray-100)}
+.section-label{display:inline-block;font-family:var(--font-display);font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);background:var(--blue-light);padding:6px 16px;border-radius:50px;margin-bottom:16px}
+.section-title{font-size:2.4rem;margin-bottom:16px;letter-spacing:-.02em}
+.section-sub{font-size:1.05rem;color:var(--gray-500);max-width:600px;line-height:1.7}
+.section-header{margin-bottom:60px}
+.section-header.center{text-align:center;display:flex;flex-direction:column;align-items:center}
 
-/* === HERO === */
-.hero{min-height:100vh;display:flex;align-items:center;padding-top:100px;padding-bottom:60px}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(40px,6vw,80px);width:100%}
-.hero-text{max-width:600px}
-.hero-label{margin-bottom:16px}
-.hero-title{margin-bottom:24px}
-.hero-desc{margin-bottom:40px}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:56px}
-.hero-stats{display:flex;gap:48px;padding-top:32px;border-top:1px solid var(--border)}
-.hero-stat-val{font-size:clamp(24px,3vw,36px);font-weight:700;letter-spacing:-0.02em;line-height:1}
-.hero-stat-label{font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-faint);margin-top:8px}
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.service-card{background:var(--white);border-radius:var(--radius-lg);padding:40px;border:1px solid var(--gray-100);transition:all .3s;position:relative;overflow:hidden}
+.section-gray .service-card{border-color:transparent}
+.service-card:hover{border-color:var(--blue);transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue);opacity:0;transition:opacity .3s}
+.service-card:hover::before{opacity:1}
+.service-icon{width:56px;height:56px;border-radius:14px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:1.5rem}
+.service-card h3{font-size:1.2rem;margin-bottom:10px}
+.service-card p{font-size:.9rem;color:var(--gray-500);line-height:1.7}
+.service-card ul{list-style:none;margin-top:16px}
+.service-card ul li{font-size:.85rem;color:var(--gray-500);padding:4px 0;padding-left:20px;position:relative}
+.service-card ul li::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:6px;height:6px;border-radius:50%;background:var(--blue)}
 
-/* Hero Image — Rule 9: brightness(95%) */
-.hero-img{border-radius:24px;overflow:hidden;position:relative}
-.hero-img img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:brightness(95%)}
+/* ABOUT / WHY */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-img{aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;background:var(--blue-light)}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-features{display:grid;gap:24px;margin-top:32px}
+.about-feature{display:flex;gap:16px;align-items:start}
+.about-feature-icon{width:44px;height:44px;min-width:44px;border-radius:12px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.about-feature h4{font-size:.95rem;margin-bottom:4px}
+.about-feature p{font-size:.85rem;color:var(--gray-500);line-height:1.6}
 
+/* TECH */
+.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tech-card{background:var(--white);border-radius:var(--radius-lg);padding:36px;text-align:center;border:1px solid var(--gray-100);transition:all .3s}
+.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.tech-icon{width:64px;height:64px;border-radius:16px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:1.6rem}
+.tech-card h3{font-size:1.05rem;margin-bottom:8px}
+.tech-card p{font-size:.85rem;color:var(--gray-500);line-height:1.6}
+
+/* TEAM */
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.team-card{text-align:center}
+.team-avatar{width:100%;aspect-ratio:1;border-radius:var(--radius-lg);background:var(--blue-light);overflow:hidden;margin-bottom:16px;position:relative}
+.team-avatar::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(45,127,249,.08) 100%)}
+.team-avatar img{width:100%;height:100%;object-fit:cover}
+.team-card h3{font-size:1rem;margin-bottom:4px}
+.team-card p{font-size:.8rem;color:var(--blue);font-weight:500}
+
+/* CTA */
+.cta-section{padding:100px 0;background:linear-gradient(135deg,var(--dark) 0%,#1a3a5c 100%);color:var(--white);text-align:center;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;top:-200px;right:-200px;width:500px;height:500px;border-radius:50%;background:rgba(45,127,249,.15)}
+.cta-section h2{color:var(--white);font-size:2.4rem;margin-bottom:16px}
+.cta-section p{color:rgba(255,255,255,.7);font-size:1.1rem;margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto}
+
+/* HOURS */
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.hours-table{width:100%}
+.hours-row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--gray-100);font-size:.95rem}
+.hours-row:last-child{border-bottom:none}
+.hours-day{font-weight:500;color:var(--dark)}
+.hours-time{color:var(--gray-500)}
+.contact-info{display:grid;gap:20px}
+.contact-item{display:flex;gap:14px;align-items:start}
+.contact-icon{width:44px;height:44px;min-width:44px;border-radius:12px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.contact-item h4{font-size:.9rem;color:var(--dark);margin-bottom:2px}
+.contact-item p{font-size:.85rem;color:var(--gray-500)}
+.contact-item a{color:var(--blue);font-weight:500}
+.contact-item a:hover{color:var(--blue-dark)}
+.map-wrapper{width:100%;aspect-ratio:16/9;border-radius:var(--radius-lg);overflow:hidden;margin-top:40px;border:1px solid var(--gray-100)}
+.map-wrapper iframe{width:100%;height:100%;border:none}
+
+/* FOOTER */
+.footer{background:var(--dark);color:rgba(255,255,255,.6);padding:60px 0 30px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-brand{font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:12px}
+.footer-brand span{color:var(--blue)}
+.footer p{font-size:.85rem;line-height:1.7}
+.footer h4{font-family:var(--font-display);font-size:.85rem;font-weight:600;color:var(--white);margin-bottom:16px;text-transform:uppercase;letter-spacing:.05em}
+.footer ul{list-style:none}
+.footer ul li{margin-bottom:10px}
+.footer ul a{font-size:.85rem;color:rgba(255,255,255,.5);transition:color .2s}
+.footer ul a:hover{color:var(--blue)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem}
+
+/* MOBILE */
 @media(max-width:1024px){
-  .hero-grid{grid-template-columns:1fr}
-  .hero{padding-top:100px}
-  .hero-img{border-radius:24px;overflow:hidden;max-width:500px}
+.hero h1{font-size:2.4rem}
+.section-title{font-size:2rem}
+.services-grid,.tech-grid{grid-template-columns:1fr 1fr}
+.team-grid{grid-template-columns:repeat(2,1fr)}
+.footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
-  .hero-stats{flex-direction:column;gap:24px}
+.nav-links{display:none}
+.nav-mobile{display:block}
+.hero{padding:120px 0 60px}
+.hero-grid,.about-grid,.hours-grid{grid-template-columns:1fr;gap:40px}
+.hero h1{font-size:2rem}
+.trust-grid{grid-template-columns:repeat(2,1fr);gap:20px}
+.services-grid,.tech-grid{grid-template-columns:1fr}
+.team-grid{grid-template-columns:repeat(2,1fr)}
+.footer-grid{grid-template-columns:1fr}
+.hero-stat{display:none}
 }
 
-/* === TRUST BAR === */
-.trust{padding:32px 0;border-bottom:1px solid var(--border)}
-.trust-items{display:flex;justify-content:center;gap:clamp(24px,4vw,56px);flex-wrap:wrap}
-.trust-item{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:500;color:var(--text-muted)}
-.trust-item svg{width:16px;height:16px;stroke:var(--accent);stroke-width:2;fill:none;flex-shrink:0}
-
-/* === SECTION HEADERS === */
-.sec-header{margin-bottom:clamp(48px,6vw,80px)}
-.sec-header-center{text-align:center;max-width:640px;margin-left:auto;margin-right:auto;margin-bottom:clamp(48px,6vw,80px)}
-.sec-header .t-label,.sec-header-center .t-label{margin-bottom:16px;display:block}
-.sec-header .t-section,.sec-header-center .t-section{margin-bottom:16px}
-
-/* === SERVICES — Rule 10: 12px Radius Cards === */
-.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
-.svc-card{background:var(--white);padding:clamp(32px,4vw,56px);transition:background .4s var(--ease),box-shadow .4s var(--ease),transform .4s var(--ease)}
-.svc-card:hover{background:var(--bg);box-shadow:var(--shadow-md);transform:translateY(-2px)}
-.svc-num{font-size:clamp(32px,4vw,56px);font-weight:300;color:var(--border);line-height:1;margin-bottom:24px;letter-spacing:-0.02em}
-.svc-card h3{font-size:18px;font-weight:600;margin-bottom:12px;letter-spacing:-0.01em}
-.svc-card p{font-size:14px;color:var(--text-muted);line-height:1.6;margin-bottom:16px}
-.svc-price{font-size:13px;font-weight:600;color:var(--accent)}
-@media(max-width:768px){.svc-grid{grid-template-columns:1fr}}
-
-/* === GALLERY — Rule 9: Dimmed Images === */
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.5vw,20px)}
-.gallery-item{position:relative;border-radius:var(--radius);overflow:hidden}
-.gallery-item img{width:100%;height:100%;object-fit:cover;filter:brightness(95%);transition:transform .8s var(--ease),filter .4s}
-.gallery-item:hover img{transform:scale(1.03);filter:brightness(100%)}
-.gallery-item:nth-child(1){grid-column:span 2;grid-row:span 2}
-.gallery-item:nth-child(1) img{aspect-ratio:4/3}
-.gallery-item:nth-child(n+2) img{aspect-ratio:1/1}
-.gallery-caption{position:absolute;bottom:12px;left:12px;padding:5px 14px;background:rgba(26,26,46,0.7);backdrop-filter:blur(8px);color:rgba(255,255,255,0.85);font-size:13px;font-weight:500;border-radius:6px;letter-spacing:0.02em}
-@media(max-width:768px){
-  .gallery{grid-template-columns:1fr 1fr}
-  .gallery-item:nth-child(1){grid-column:span 2}
-}
-
-/* === PORTAL SECTION — Dark === */
-.portal{background:var(--primary);color:var(--white)}
-.portal-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(48px,6vw,96px);align-items:center}
-.portal-label{color:var(--accent);margin-bottom:16px;display:block}
-.portal-title{color:var(--white);margin-bottom:20px}
-.portal-desc{color:rgba(255,255,255,0.5);font-size:clamp(15px,1.1vw,18px);line-height:1.7;margin-bottom:32px}
-.portal-features{display:flex;flex-direction:column;gap:14px}
-.portal-feat{display:flex;align-items:center;gap:14px;font-size:15px;color:rgba(255,255,255,0.75)}
-.portal-check{width:24px;height:24px;background:rgba(45,127,249,0.12);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.portal-check svg{width:12px;height:12px;stroke:var(--accent);stroke-width:2.5;fill:none}
-
-/* Browser Mockup */
-.mockup{background:#0D0E14;border-radius:var(--radius);overflow:hidden;box-shadow:0 12px 17px rgba(0,0,0,0.15),0 25px 50px -12px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.04)}
-.mockup-chrome{display:flex;align-items:center;gap:8px;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.04)}
-.mockup-dot{width:10px;height:10px;border-radius:50%}
-.dot-r{background:#FF5F57}.dot-y{background:#FFBD2E}.dot-g{background:#28CA41}
-.mockup-url{margin-left:16px;font-size:13px;color:rgba(255,255,255,0.2);background:rgba(255,255,255,0.03);padding:5px 16px;border-radius:4px;flex:1;text-align:center}
-.mockup-body{padding:24px}
-.mockup-title{font-size:15px;font-weight:600;color:var(--white);margin-bottom:20px}
-.mockup-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
-.mockup-row:last-child{border:0}
-.mockup-name{font-size:13px;color:rgba(255,255,255,0.75)}
-.mockup-meta{font-size:13px;color:rgba(255,255,255,0.25);margin-top:2px}
-.mockup-tag{font-size:13px;font-weight:600;padding:4px 12px;border-radius:var(--radius-pill);letter-spacing:0.03em;text-transform:uppercase}
-.tag-green{background:rgba(42,157,143,0.12);color:#2A9D8F}
-.tag-blue{background:rgba(45,127,249,0.12);color:var(--accent)}
-.tag-amber{background:rgba(245,158,11,0.12);color:#F59E0B}
-.mockup-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
-.mockup-stat{padding:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);border-radius:8px;text-align:center}
-.mockup-stat-num{font-size:20px;font-weight:700;color:var(--accent)}
-.mockup-stat-label{font-size:13px;color:rgba(255,255,255,0.2);margin-top:4px;text-transform:uppercase;letter-spacing:0.06em}
-@media(max-width:1024px){.portal-grid{grid-template-columns:1fr}}
-
-/* === ABOUT === */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(48px,6vw,96px);align-items:center}
-.about-img{border-radius:var(--radius);overflow:hidden}
-.about-img img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:brightness(95%)}
-.about-text .t-label{margin-bottom:16px;display:block}
-.about-text .t-sub{margin-bottom:24px}
-.about-text p{font-size:15px;color:var(--text-muted);line-height:1.7;margin-bottom:16px}
-.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border-radius:var(--radius);overflow:hidden;margin-top:40px}
-.about-stat{background:var(--bg);padding:24px 20px;text-align:center}
-.about-stat b{display:block;font-size:20px;font-weight:700;letter-spacing:-0.02em;margin-bottom:4px}
-.about-stat span{font-size:13px;color:var(--text-faint);letter-spacing:0.04em;text-transform:uppercase}
-@media(max-width:1024px){.about-grid{grid-template-columns:1fr}}
-
-/* === REVIEWS === */
-.review-card{max-width:480px;margin:0 auto;text-align:center;padding:56px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius)}
-.review-stars{display:flex;justify-content:center;gap:4px;margin-bottom:20px}
-.review-stars svg{width:20px;height:20px;fill:#F59E0B}
-.review-score{font-size:clamp(48px,6vw,72px);font-weight:800;letter-spacing:-0.03em;line-height:1}
-.review-text{font-size:14px;color:var(--text-muted);margin-top:8px}
-
-/* === CONTACT === */
-.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(24px,3vw,48px);align-items:start}
-.contact-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:clamp(32px,4vw,56px)}
-.contact-card h3{font-size:20px;font-weight:700;letter-spacing:-0.01em;margin-bottom:28px}
-.contact-btn{display:flex;align-items:center;gap:12px;width:100%;padding:14px 20px;border-radius:var(--radius-btn);font-size:14px;font-weight:600;margin-bottom:12px;transition:all .3s}
-.contact-btn svg{width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none;flex-shrink:0}
-.contact-btn-primary{background:var(--primary);color:var(--white)}
-.contact-btn-primary:hover{background:#2A2B40;transform:translateY(-1px)}
-.contact-btn-wa{background:#25D366;color:var(--white)}
-.contact-btn-wa:hover{background:#1DA851}
-.contact-btn-mail{background:var(--bg);color:var(--primary);border:1px solid var(--border)}
-.contact-btn-mail:hover{border-color:var(--primary)}
-.contact-info{margin-top:28px}
-.ci-label{font-size:13px;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-faint);margin-bottom:4px;margin-top:20px}
-.ci-label:first-child{margin-top:0}
-.ci-val{font-size:14px;font-weight:500;color:var(--primary)}
-.map-wrap{border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);height:100%;min-height:440px}
-.map-wrap iframe{width:100%;height:100%;border:0}
-@media(max-width:1024px){.contact-grid{grid-template-columns:1fr}}
-
-/* === CTA === */
-.cta{background:var(--primary);text-align:center}
-.cta .t-section{color:var(--white)}
-.cta .t-body-lg{color:rgba(255,255,255,0.45);max-width:480px;margin:0 auto 40px}
-
-/* === FOOTER === */
-footer{padding:clamp(48px,6vw,96px) 0 32px;border-top:1px solid var(--border)}
-.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(24px,3vw,48px);margin-bottom:clamp(48px,6vw,80px)}
-.ft-brand{font-size:16px;font-weight:700;margin-bottom:12px}
-.ft-col h4{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-faint);margin-bottom:16px}
-.ft-col a{display:block;font-size:14px;color:var(--text-muted);line-height:2.2;transition:color .3s}
-.ft-col a:hover{color:var(--primary)}
-.ft-col p{font-size:14px;color:var(--text-muted);line-height:1.7}
-.ft-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid var(--border);font-size:13px;color:var(--text-faint)}
-.ft-social{display:flex;gap:8px}
-.ft-social a{width:32px;height:32px;border-radius:var(--radius-btn);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:all .3s}
-.ft-social a:hover{border-color:var(--primary);background:var(--bg)}
-.ft-social a svg{width:14px;height:14px;stroke:var(--text-muted);stroke-width:2;fill:none}
-@media(max-width:768px){.ft-grid{grid-template-columns:1fr 1fr}}
-
-/* === ANIMATIONS — Rule 7,8: Subtle, Scroll-Linked === */
-
-/* === STICKY MOBILE CTA === */
-.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;padding:12px 16px;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-top:1px solid var(--border);transform:translateY(100%);transition:transform .4s var(--ease-out)}
-.sticky-cta.show{transform:translateY(0)}
-.sticky-cta a{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:14px;background:var(--accent);color:var(--white);font-size:15px;font-weight:600;border-radius:var(--radius-btn)}
-@media(max-width:768px){.sticky-cta{display:block}}
-
-/* === COOKIE BANNER === */
-.cookie-bar{position:fixed;bottom:0;left:0;right:0;z-index:200;padding:16px 24px;background:var(--primary);color:rgba(255,255,255,0.7);font-size:13px;display:flex;align-items:center;justify-content:space-between;gap:16px;transform:translateY(100%);transition:transform .5s var(--ease-out)}
-.cookie-bar.show{transform:translateY(0)}
-.cookie-bar a{color:var(--accent);text-decoration:underline}
-.cookie-btn{padding:8px 20px;background:var(--accent);color:var(--white);border:none;border-radius:var(--radius-btn);font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
-
-/* Accessibility: Reduced Motion */
-@media(prefers-reduced-motion:reduce){
-  
-  .gallery-item img{transition:none}
-  .svc-card{transition:none}
-  .btn,.btn-primary,.nav,.nav-cta{transition:none}
-}
-
-.svc-card:hover,.sv:hover,.area-card:hover{transform:translateY(-6px) rotateX(2deg);transition:transform 0.4s cubic-bezier(0.33,1,0.68,1),box-shadow 0.4s}
-
-/* Image reveal mask effect */
-.gallery-item{clip-path:inset(0 0 0 0);transition:clip-path 0.8s cubic-bezier(0.33,1,0.68,1)}
-
+/* ANIMATIONS */
+.fade-up{opacity:0;transform:translateY(30px);transition:all .6s cubic-bezier(.16,1,.3,1)}
+.fade-up.visible{opacity:1;transform:translateY(0)}
 </style>
-
-<!-- GSAP CDN -->
-
-
-    <style>
-    /* SYSTEMS v4 — Unique Color Override */
-    :root {
-      --accent: #2D7FF9 !important;
-      --accent-hover: #1A6AE0 !important;
-    }
-    /* Fix SVG icon sizing globally */
-    .cb svg, .contact-btn svg, .btn svg { width: 20px !important; height: 20px !important; flex-shrink: 0; }
-    .nav-cta svg { width: 16px !important; height: 16px !important; }
-    .ft-social svg { width: 14px !important; height: 14px !important; }
-    .review-stars svg { width: 20px !important; height: 20px !important; }
-    </style>
-    </head>
+</head>
 <body>
 
-
 <!-- NAV -->
-<nav class="nav" id="nav">
-  <div class="container nav-inner">
-    <a href="#" class="nav-brand">AllDent Zahnzentrum Essen</a>
-    <div class="nav-links">
-      <a href="#leistungen">Leistungen</a>
-      <a href="#praxis">Praxis</a>
-      <a href="#einblicke">Einblicke</a>
-      <a href="#kontakt">Kontakt</a>
-      <a href="tel:02016497920" class="nav-cta">Termin vereinbaren</a>
-    </div>
-    <button class="nav-toggle" onclick="document.getElementById('mob').classList.add('open')"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-<div class="mobile-menu" id="mob">
-  <button class="mob-close" onclick="document.getElementById('mob').classList.remove('open')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
-  <a href="#leistungen" onclick="document.getElementById('mob').classList.remove('open')">Leistungen</a>
-  <a href="#praxis" onclick="document.getElementById('mob').classList.remove('open')">Praxis</a>
-  <a href="#einblicke" onclick="document.getElementById('mob').classList.remove('open')">Einblicke</a>
-  <a href="#kontakt" onclick="document.getElementById('mob').classList.remove('open')">Kontakt</a>
-  <a href="tel:02016497920" class="btn btn-primary" style="margin-top:16px">Termin vereinbaren</a>
+<nav class="nav">
+<div class="nav-inner">
+<a href="#" class="nav-logo">All<span>Dent</span> Essen</a>
+<div class="nav-links">
+<a href="#leistungen">Leistungen</a>
+<a href="#technologie">Technologie</a>
+<a href="#team">Team</a>
+<a href="#kontakt">Kontakt</a>
+<a href="tel:02016497920" class="nav-cta">0201 649 792 0</a>
 </div>
+<button class="nav-mobile" onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')" aria-label="Menü">
+<span></span><span></span><span></span>
+</button>
+</div>
+</nav>
 
 <!-- HERO -->
 <section class="hero">
-
-  <div style="position:absolute;inset:30px;border:1px solid var(--accent,#0284C7);border-radius:50%;animation:float3d 6s ease-in-out infinite;animation-delay:-2s;opacity:.6"></div>
-  <div style="position:absolute;inset:60px;border:1px dashed var(--accent,#0284C7);border-radius:50%;animation:spin3d 20s linear infinite;opacity:.4"></div>
-  <svg style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:80px;height:80px;animation:float3d 4s ease-in-out infinite;animation-delay:-1s" viewBox="0 0 24 24" fill="none" stroke="var(--accent,#0284C7)" stroke-width="1.5"><path d="M12 2C8 2 5 5.5 5 9c0 2.5 1.5 4.5 3 6l1 1.5c.5.7 1 1.5 1 2.5h4c0-1 .5-1.8 1-2.5L16 15c1.5-1.5 3-3.5 3-6 0-3.5-3-7-7-7z"/><path d="M9 22h6M10 19h4"/></svg>
+<div class="container">
+<div class="hero-grid">
+<div class="fade-up">
+<div class="hero-badge">Jetzt Termin vereinbaren</div>
+<h1>Moderne Zahnmedizin <span>im Herzen von Essen</span></h1>
+<p>Im AllDent Zahnzentrum am Willy-Brandt-Platz verbinden wir hochwertige Zahnmedizin mit fairen Preisen. Über 30 Behandlungszimmer, neueste Technologie und ein erfahrenes Team warten auf Sie.</p>
+<div class="hero-btns">
+<a href="tel:02016497920" class="btn-primary">
+<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+Jetzt anrufen
+</a>
+<a href="#leistungen" class="btn-secondary">Leistungen entdecken</a>
 </div>
-
-  <div class="container hero-grid">
-  <div class="hero-text">
-    <p class="t-label hero-label">Zahnarztpraxis in Essen</p>
-    <h1 class="t-hero hero-title">Zahngesundheit auf höchstem Niveau</h1>
-    <p class="t-body-lg hero-desc">Modernste Zahnmedizin mit persönlicher Betreuung in Essen. Wir nehmen uns Zeit für Sie.</p>
-    <div class="hero-actions">
-      <a href="tel:02016497920" class="btn btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Termin vereinbaren</a>
-      <a href="#leistungen" class="btn btn-outline">Unsere Leistungen</a>
-    </div>
-    <div class="hero-stats">
-      <div class="hero-meta-item"><div class="hero-meta-val">4.8</div><div class="hero-meta-label">Google Rating</div></div><div class="hero-meta-item"><div class="hero-meta-val">476+</div><div class="hero-meta-label">Bewertungen</div></div><div class="hero-meta-item"><div class="hero-meta-val">Mo–Fr</div><div class="hero-meta-label">Geöffnet</div></div>
-    </div>
-  </div>
-  <div class="hero-img">
-    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=1000&fit=crop&q=80" alt="AllDent Zahnzentrum Essen" loading="eager">
-  </div>
-  </div>
-</section>
-
-<!-- TRUST -->
-<div class="trust">
-  <div class="container">
-    <div class="trust-items">
-      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Kassenpatienten willkommen</div>
-      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Kurze Wartezeiten</div>
-      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Modernste Ausstattung</div>
-      <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Erfahrenes Team</div>
-    </div>
-  </div>
 </div>
-
-<!-- SERVICES -->
-<section id="leistungen">
-  <div class="container">
-    <div class="sec-header">
-      <span class="t-label">Leistungen</span>
-      <h2 class="t-section">Zahnmedizin auf<br>höchstem Niveau</h2>
-    </div>
-    <div class="svc-grid">
-      <div class="svc-card"><div class="svc-num">01</div><h3>Prophylaxe</h3><p>Professionelle Zahnreinigung für langfristige Zahngesundheit.</p><div class="svc-price">ab 80€</div></div><div class="svc-card"><div class="svc-num">02</div><h3>Implantologie</h3><p>Modernste Implantate für ein natürliches Lächeln.</p><div class="svc-price">auf Anfrage</div></div><div class="svc-card"><div class="svc-num">03</div><h3>Ästhetische Zahnmedizin</h3><p>Bleaching, Veneers und mehr für Ihr strahlendes Lächeln.</p><div class="svc-price">auf Anfrage</div></div><div class="svc-card"><div class="svc-num">04</div><h3>Angstpatienten</h3><p>Einfühlsame Behandlung in entspannter Atmosphäre.</p><div class="svc-price">auf Anfrage</div></div>
-    </div>
-  </div>
+<div class="hero-visual fade-up">
+<div class="hero-img-wrapper">
+<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80" alt="Moderne Zahnarztpraxis" loading="eager">
+</div>
+<div class="hero-stat s1">
+<div class="num">30+</div>
+<div class="label">Behandlungs-<br>zimmer</div>
+</div>
+<div class="hero-stat s2">
+<div class="num">4.6</div>
+<div class="label">Google<br>Bewertung</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<!-- GALLERY -->
-<section id="einblicke" style="background:var(--bg)">
-  <div class="container">
-    <div class="sec-header-center">
-      <span class="t-label">Einblicke</span>
-      <h2 class="t-section">Unsere Praxis</h2>
-    </div>
-    <div class="gallery">
-      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=400&fit=crop&q=80" loading="lazy" alt="Behandlungsraum"><span class="gallery-caption">Behandlungsraum</span></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=600&h=400&fit=crop&q=80" loading="lazy" alt="Empfangsbereich"><span class="gallery-caption">Empfangsbereich</span></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop&q=80" loading="lazy" alt="Moderne Technik"><span class="gallery-caption">Moderne Technik</span></div>
-    </div>
-  </div>
+<!-- TRUST BAR -->
+<section class="trust">
+<div class="container">
+<div class="trust-grid fade-up">
+<div class="trust-item">
+<div class="trust-num">15+</div>
+<div class="trust-label">Jahre Erfahrung</div>
+</div>
+<div class="trust-item">
+<div class="trust-num">50.000+</div>
+<div class="trust-label">Zufriedene Patienten</div>
+</div>
+<div class="trust-item">
+<div class="trust-num">30+</div>
+<div class="trust-label">Fachzahnärzte</div>
+</div>
+<div class="trust-item">
+<div class="trust-num">Mo-Sa</div>
+<div class="trust-label">Geöffnet für Sie</div>
+</div>
+</div>
+</div>
 </section>
 
-<!-- PORTAL -->
-<section class="portal">
-  <div class="container">
-    <div class="portal-grid">
-      <div>
-        <span class="t-label portal-label">Patienten-Portal</span>
-        <h2 class="t-section portal-title">Ihre Termine<br>digital verwalten</h2>
-        <p class="portal-desc">Alle Behandlungen, Termine und Befunde an einem Ort. Jederzeit zugänglich, sicher und übersichtlich.</p>
-        <div class="portal-features">
-          <div class="portal-feat"><span class="portal-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>Online-Terminbuchung</div>
-          <div class="portal-feat"><span class="portal-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>Befunde digital einsehen</div>
-          <div class="portal-feat"><span class="portal-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>Automatische Recall-Erinnerungen</div>
-          <div class="portal-feat"><span class="portal-check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>Sichere Kommunikation</div>
-        </div>
-      </div>
-      <div class="mockup">
-        <div class="mockup-chrome"><span class="mockup-dot dot-r"></span><span class="mockup-dot dot-y"></span><span class="mockup-dot dot-g"></span><span class="mockup-url">portal.AllDent Zahnzentrum Essen.de</span></div>
-        <div class="mockup-body">
-          <div class="mockup-title">Ihre nächsten Termine</div>
-          <div class="mockup-row"><div><div class="mockup-name">Professionelle Zahnreinigung</div><div class="mockup-meta">Di, 15. April 2026 &middot; 10:00 Uhr</div></div><span class="mockup-tag tag-green">Bestätigt</span></div>
-          <div class="mockup-row"><div><div class="mockup-name">Kontrolluntersuchung</div><div class="mockup-meta">Mo, 12. Mai 2026 &middot; 09:30 Uhr</div></div><span class="mockup-tag tag-blue">Geplant</span></div>
-          <div class="mockup-row"><div><div class="mockup-name">Recall-Erinnerung</div><div class="mockup-meta">Fällig in 3 Monaten</div></div><span class="mockup-tag tag-amber">Ausstehend</span></div>
-          <div class="mockup-stats">
-            <div class="mockup-stat"><div class="mockup-stat-num">2</div><div class="mockup-stat-label">Termine</div></div>
-            <div class="mockup-stat"><div class="mockup-stat-num">5</div><div class="mockup-stat-label">Befunde</div></div>
-            <div class="mockup-stat"><div class="mockup-stat-num">100%</div><div class="mockup-stat-label">Recall</div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- LEISTUNGEN -->
+<section class="section section-gray" id="leistungen">
+<div class="container">
+<div class="section-header center fade-up">
+<span class="section-label">Leistungen</span>
+<h2 class="section-title">Umfassende Zahnmedizin unter einem Dach</h2>
+<p class="section-sub">Von der Vorsorge bis zur ästhetischen Zahnmedizin bieten wir Ihnen alle Leistungen in unserem modernen Zahnzentrum.</p>
+</div>
+<div class="services-grid">
+<div class="service-card fade-up">
+<div class="service-icon">🦷</div>
+<h3>Prophylaxe & Vorsorge</h3>
+<p>Professionelle Zahnreinigung und individuell abgestimmte Vorsorgeprogramme für langfristig gesunde Zähne.</p>
+<ul>
+<li>Professionelle Zahnreinigung (PZR)</li>
+<li>Parodontitis-Behandlung</li>
+<li>Individualprophylaxe</li>
+<li>Kinderprophylaxe</li>
+</ul>
+</div>
+<div class="service-card fade-up">
+<div class="service-icon">🔩</div>
+<h3>Implantologie</h3>
+<p>Festsitzender Zahnersatz auf Implantaten mit modernster 3D-Planung und schonenden Verfahren.</p>
+<ul>
+<li>Einzelzahnimplantate</li>
+<li>All-on-4 Versorgung</li>
+<li>3D-navigierte Implantation</li>
+<li>Knochenaufbau</li>
+</ul>
+</div>
+<div class="service-card fade-up">
+<div class="service-icon">✨</div>
+<h3>Ästhetische Zahnmedizin</h3>
+<p>Für Ihr schönstes Lächeln: Von Bleaching über Veneers bis zur vollständigen Smile-Transformation.</p>
+<ul>
+<li>Veneers & Lumineers</li>
+<li>Professionelles Bleaching</li>
+<li>Zahnfarbene Füllungen</li>
+<li>Vollkeramischer Zahnersatz</li>
+</ul>
+</div>
+<div class="service-card fade-up">
+<div class="service-icon">😁</div>
+<h3>Kieferorthopädie</h3>
+<p>Gerade Zähne in jedem Alter dank unsichtbarer Aligner und moderner Bracketsysteme.</p>
+<ul>
+<li>Unsichtbare Aligner</li>
+<li>Feste Zahnspangen</li>
+<li>Retainer-Versorgung</li>
+<li>Funktionskieferorthopädie</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
 
-<!-- ABOUT -->
-<section id="praxis">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-img"><img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=800&h=600&fit=crop&q=80" alt="AllDent Zahnzentrum Essen"></div>
-      <div class="about-text">
-        <span class="t-label">Über uns</span>
-        <h2 class="t-sub">Ihre Praxis in Essen</h2>
-        <p>AllDent Zahnzentrum Essen steht für erstklassige Qualität in Essen. Wir verbinden Professionalität mit persönlicher Betreuung.</p><p>Unser erfahrenes Team freut sich darauf, Sie willkommen zu heißen.</p>
-        <div class="about-stats"><div class="about-stat"><b>4.8</b><span>Google Rating</span></div><div class="about-stat"><b>100%</b><span>Engagement</span></div><div class="about-stat"><b>Essen</b><span>Standort</span></div></div>
-      </div>
-    </div>
-  </div>
+<!-- WARUM ALLDENT -->
+<section class="section" id="ueber-uns">
+<div class="container">
+<div class="about-grid">
+<div class="about-img fade-up">
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80" alt="Zahnarzt bei der Behandlung" loading="lazy">
+</div>
+<div class="fade-up">
+<span class="section-label">Warum AllDent</span>
+<h2 class="section-title">Qualität, die Sie spüren</h2>
+<p class="section-sub">Im AllDent Zahnzentrum Essen vereinen wir fachliche Exzellenz mit einem patientenfreundlichen Konzept am Willy-Brandt-Platz.</p>
+<div class="about-features">
+<div class="about-feature">
+<div class="about-feature-icon">💰</div>
+<div>
+<h4>Faire Preise garantiert</h4>
+<p>Hochwertige Zahnmedizin muss nicht teuer sein. Transparente Kostenaufstellung vor jeder Behandlung.</p>
+</div>
+</div>
+<div class="about-feature">
+<div class="about-feature-icon">⏰</div>
+<div>
+<h4>Flexible Öffnungszeiten</h4>
+<p>Montag bis Freitag 07:00-21:00 Uhr und Samstag 08:00-16:00 Uhr. Auch für Berufstätige ideal.</p>
+</div>
+</div>
+<div class="about-feature">
+<div class="about-feature-icon">🏥</div>
+<div>
+<h4>Alles unter einem Dach</h4>
+<p>Alle Fachrichtungen, eigenes Zahntechniklabor und modernste Diagnostik an einem Standort.</p>
+</div>
+</div>
+<div class="about-feature">
+<div class="about-feature-icon">📍</div>
+<div>
+<h4>Zentrale Lage</h4>
+<p>Direkt gegenüber dem Essener Hauptbahnhof im Königshof am Willy-Brandt-Platz 5.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<!-- REVIEWS -->
-<section style="background:var(--bg)">
-  <div class="container">
-    <div class="sec-header-center"><span class="t-label">Bewertungen</span><h2 class="t-section">Was unsere Kunden sagen</h2></div><div class="review-card"><div class="review-stars"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="review-score">4.8</div><div class="review-text">auf Google · 476 Bewertungen</div></div>
-  </div>
+<!-- TECHNOLOGIE -->
+<section class="section section-gray" id="technologie">
+<div class="container">
+<div class="section-header center fade-up">
+<span class="section-label">Technologie</span>
+<h2 class="section-title">Modernste Ausstattung für beste Ergebnisse</h2>
+<p class="section-sub">Wir investieren kontinuierlich in die neueste Technik, damit Sie von präziser Diagnostik und schonenden Behandlungen profitieren.</p>
+</div>
+<div class="tech-grid">
+<div class="tech-card fade-up">
+<div class="tech-icon">📷</div>
+<h3>Digitales Röntgen (DVT)</h3>
+<p>Dreidimensionale Aufnahmen mit minimaler Strahlenbelastung für exakte Diagnostik und Behandlungsplanung.</p>
+</div>
+<div class="tech-card fade-up">
+<div class="tech-icon">🖥️</div>
+<h3>Intraoralscanner</h3>
+<p>Digitale Abdrucknahme ohne unangenehme Abdruckmasse. Schnell, präzise und komfortabel.</p>
+</div>
+<div class="tech-card fade-up">
+<div class="tech-icon">🔬</div>
+<h3>OP-Mikroskop</h3>
+<p>Bis zu 25-fache Vergrößerung für höchste Präzision bei Wurzelbehandlungen und mikrochirurgischen Eingriffen.</p>
+</div>
+<div class="tech-card fade-up">
+<div class="tech-icon">💻</div>
+<h3>CAD/CAM Fertigung</h3>
+<p>Computergestütztes Design und Herstellung von Zahnersatz. Oft in nur einer Sitzung fertig.</p>
+</div>
+<div class="tech-card fade-up">
+<div class="tech-icon">💡</div>
+<h3>Laser-Therapie</h3>
+<p>Schonende Behandlung von Weichgewebe, Parodontitis und Kariesentfernung mit modernster Lasertechnologie.</p>
+</div>
+<div class="tech-card fade-up">
+<div class="tech-icon">🦿</div>
+<h3>Guided Surgery</h3>
+<p>3D-geplante und navigierte Implantation für maximale Sicherheit und minimalinvasive Eingriffe.</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- CONTACT -->
-<section id="kontakt">
-  <div class="container">
-    <div class="sec-header-center">
-      <span class="t-label">Kontakt</span>
-      <h2 class="t-section">Wir freuen uns<br>auf Sie</h2>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3>Kontaktieren Sie uns</h3>
-        <a href="tel:02016497920" class="contact-btn contact-btn-primary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> Anrufen: 0201 6497920</a><a href="https://wa.me/492016497920" class="contact-btn contact-btn-wa" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg> WhatsApp</a>
-        <div class="contact-info"><div class="ci-label">Adresse</div><div class="ci-val">Essen</div><div class="ci-label">Öffnungszeiten</div><div class="ci-val">Mo-Fr: 07:00-21:00, Sa: 08:00-16:00</div></div>
-      </div>
-      <div class="map-wrap"><iframe src="https://www.google.com/maps?q=AllDent+Zahnzentrum+Essen+Essen&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Standort"></iframe></div>
-    </div>
-  </div>
+<!-- TEAM -->
+<section class="section" id="team">
+<div class="container">
+<div class="section-header center fade-up">
+<span class="section-label">Unser Team</span>
+<h2 class="section-title">Erfahrene Spezialisten für Ihr Lächeln</h2>
+<p class="section-sub">Unser Team aus über 30 Fachzahnärzten und Spezialisten bietet Ihnen kompetente Versorgung in allen Bereichen der Zahnmedizin.</p>
+</div>
+<div class="team-grid">
+<div class="team-card fade-up">
+<div class="team-avatar">
+<img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80" alt="Zahnarzt" loading="lazy">
+</div>
+<h3>Fachzahnärzte</h3>
+<p>Implantologie</p>
+</div>
+<div class="team-card fade-up">
+<div class="team-avatar">
+<img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80" alt="Zahnärztin" loading="lazy">
+</div>
+<h3>Fachzahnärzte</h3>
+<p>Ästhetische Zahnmedizin</p>
+</div>
+<div class="team-card fade-up">
+<div class="team-avatar">
+<img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80" alt="Zahnarzt" loading="lazy">
+</div>
+<h3>Kieferorthopäden</h3>
+<p>Aligner-Therapie</p>
+</div>
+<div class="team-card fade-up">
+<div class="team-avatar">
+<img src="https://images.unsplash.com/photo-1594824476967-48c8b964ac31?w=400&q=80" alt="Zahnärztin" loading="lazy">
+</div>
+<h3>Prophylaxe-Team</h3>
+<p>Dentalhygiene</p>
+</div>
+</div>
+</div>
 </section>
 
 <!-- CTA -->
-<section class="cta">
-  <div class="container" style="text-align:center">
-    <h2 class="t-section" style="color:#fff;margin-bottom:16px">Vereinbaren Sie<br>Ihren Termin</h2>
-    <p class="t-body-lg" style="color:rgba(255,255,255,0.45);max-width:480px;margin:0 auto 40px">Wir nehmen uns Zeit für Sie und Ihre Zahngesundheit.</p>
-    <a href="tel:02016497920" class="btn btn-primary">Jetzt anrufen: 0201 6497920</a>
-  </div>
+<section class="cta-section">
+<div class="container fade-up">
+<h2>Ihr neuer Zahnarzt in Essen</h2>
+<p>Vereinbaren Sie jetzt Ihren Termin im AllDent Zahnzentrum und erleben Sie moderne Zahnmedizin zu fairen Preisen.</p>
+<a href="tel:02016497920" class="btn-primary" style="font-size:1.05rem;padding:16px 40px">
+<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+0201 649 792 0
+</a>
+</div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section" id="kontakt">
+<div class="container">
+<div class="section-header center fade-up">
+<span class="section-label">Kontakt</span>
+<h2 class="section-title">So erreichen Sie uns</h2>
+<p class="section-sub">Direkt gegenüber dem Essener Hauptbahnhof am Willy-Brandt-Platz im Königshof.</p>
+</div>
+<div class="hours-grid fade-up">
+<div>
+<h3 style="font-size:1.2rem;margin-bottom:24px">Öffnungszeiten</h3>
+<div class="hours-table">
+<div class="hours-row"><span class="hours-day">Montag</span><span class="hours-time">07:00 – 21:00 Uhr</span></div>
+<div class="hours-row"><span class="hours-day">Dienstag</span><span class="hours-time">07:00 – 21:00 Uhr</span></div>
+<div class="hours-row"><span class="hours-day">Mittwoch</span><span class="hours-time">07:00 – 21:00 Uhr</span></div>
+<div class="hours-row"><span class="hours-day">Donnerstag</span><span class="hours-time">07:00 – 21:00 Uhr</span></div>
+<div class="hours-row"><span class="hours-day">Freitag</span><span class="hours-time">07:00 – 21:00 Uhr</span></div>
+<div class="hours-row"><span class="hours-day">Samstag</span><span class="hours-time">08:00 – 16:00 Uhr</span></div>
+<div class="hours-row"><span class="hours-day">Sonntag</span><span class="hours-time">Geschlossen</span></div>
+</div>
+</div>
+<div class="contact-info">
+<h3 style="font-size:1.2rem;margin-bottom:24px">Kontaktdaten</h3>
+<div class="contact-item">
+<div class="contact-icon">📍</div>
+<div>
+<h4>Adresse</h4>
+<p>Willy-Brandt-Platz 5<br>45127 Essen</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">📞</div>
+<div>
+<h4>Telefon</h4>
+<p><a href="tel:02016497920">0201 649 792 0</a></p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">📧</div>
+<div>
+<h4>E-Mail</h4>
+<p><a href="mailto:essen@alldent.de">essen@alldent.de</a></p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">🚂</div>
+<div>
+<h4>Anfahrt</h4>
+<p>Direkt gegenüber dem Hauptbahnhof Essen, im Königshof (ehem. Kaufhof)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="map-wrapper fade-up">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.5!2d7.0118!3d51.4508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8c2b945d2e3cb%3A0x7d0e6d3b8e9c4f0a!2sWilly-Brandt-Platz+5%2C+45127+Essen!5e0!3m2!1sde!2sde!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="AllDent Zahnzentrum Essen Standort"></iframe>
+</div>
+</div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="ft-grid">
-      <div class="ft-col"><div class="ft-brand">AllDent Zahnzentrum Essen</div><p>AllDent Zahnzentrum Essen — Ihr Partner für Qualität in Essen.</p></div>
-      <div class="ft-col"><h4>Leistungen</h4><a href="#leistungen">Prophylaxe</a><a href="#leistungen">Zahnerhaltung</a><a href="#leistungen">Implantologie</a><a href="#leistungen">Ästhetik</a></div>
-      <div class="ft-col"><h4>Kontakt</h4><a href="tel:02016497920">0201 6497920</a><a>Essen</a></div>
-      <div class="ft-col"><h4>Rechtliches</h4><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
-    </div>
-    <div class="ft-bottom"><span>&copy; 2026 AllDent Zahnzentrum Essen</span><div class="ft-social"><a href="https://www.google.com/maps/search/AllDent+Zahnzentrum+Essen+Essen" target="_blank" title="Maps"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></a></div></div>
-  </div>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="footer-brand">All<span>Dent</span> Essen</div>
+<p>Ihr modernes Zahnzentrum am Willy-Brandt-Platz in Essen. Hochwertige Zahnmedizin zu fairen Preisen.</p>
+</div>
+<div>
+<h4>Leistungen</h4>
+<ul>
+<li><a href="#leistungen">Prophylaxe</a></li>
+<li><a href="#leistungen">Implantologie</a></li>
+<li><a href="#leistungen">Ästhetik</a></li>
+<li><a href="#leistungen">Kieferorthopädie</a></li>
+</ul>
+</div>
+<div>
+<h4>Zentrum</h4>
+<ul>
+<li><a href="#technologie">Technologie</a></li>
+<li><a href="#team">Unser Team</a></li>
+<li><a href="#kontakt">Kontakt</a></li>
+<li><a href="#kontakt">Anfahrt</a></li>
+</ul>
+</div>
+<div>
+<h4>Kontakt</h4>
+<ul>
+<li><a href="tel:02016497920">0201 649 792 0</a></li>
+<li><a href="mailto:essen@alldent.de">essen@alldent.de</a></li>
+<li>Willy-Brandt-Platz 5</li>
+<li>45127 Essen</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>&copy; 2026 AllDent Zahnzentrum Essen. Alle Rechte vorbehalten.</span>
+<span><a href="#" style="color:rgba(255,255,255,.5)">Impressum</a> &middot; <a href="#" style="color:rgba(255,255,255,.5)">Datenschutz</a></span>
+</div>
+</div>
 </footer>
 
-<!-- STICKY MOBILE CTA -->
-<div class="sticky-cta" id="stickyCta">
-  <a href="tel:02016497920">Jetzt Termin vereinbaren</a>
-</div>
-
-<!-- COOKIE BANNER -->
-<div class="cookie-bar" id="cookieBar">
-  <span>Diese Website nutzt Google Maps und Google Fonts. <a href="#">Datenschutz</a></span>
-  <button class="cookie-btn" onclick="document.getElementById('cookieBar').classList.remove('show');localStorage.setItem('cookies-ok','1')">OK</button>
-</div>
-
 <script>
-// Cookie banner
-if(!localStorage.getItem('cookies-ok')){setTimeout(()=>document.getElementById('cookieBar').classList.add('show'),1500)}
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('visible');
+}
+});
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-// Sticky mobile CTA — show after scrolling past hero
-const stickyObs=new IntersectionObserver(([e])=>{document.getElementById('stickyCta').classList.toggle('show',!e.isIntersecting)},{threshold:0});
-stickyObs.observe(document.querySelector('.hero'));
-
-// Nav glass effect
-const nav=document.getElementById('nav');
-addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>80),{passive:true});
-
-// Scroll animations removed for reliability
-
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(a=>
-  a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'})})
-);
+// Nav shadow on scroll
+window.addEventListener('scroll', () => {
+document.querySelector('.nav').style.boxShadow = window.scrollY > 20 ? '0 4px 20px rgba(0,0,0,.06)' : 'none';
+});
 </script>
-
-<!-- Scroll Reveal -->
-<script>
-(function(){
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)} });
-  }, {threshold:0.1, rootMargin:'0px 0px -50px 0px'});
-  document.querySelectorAll('section, .svc-card, .gallery-item, .review-card, .about-grid, .contact-card').forEach(el => {
-    el.classList.add('reveal');
-    obs.observe(el);
-  });
-  document.querySelectorAll('.svc-grid, .gallery, .about-stats, .ft-grid').forEach(el => {
-    el.classList.add('reveal-stagger');
-    obs.observe(el);
-  });
-})();
-</script>
-
-<!-- GSAP ScrollTrigger -->
-
 </body>
 </html>
